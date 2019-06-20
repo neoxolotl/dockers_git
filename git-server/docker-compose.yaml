@@ -1,0 +1,9 @@
+services: 
+	image: jkarlos/git-server-docker-latest
+	restart: always 
+	
+	ports: 
+		- 2222:22
+	volumes: 
+		- ~/git-server/keys
+		- ~/git-server/repos 
